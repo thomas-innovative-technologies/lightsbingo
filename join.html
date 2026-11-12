@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6827309710">
+<title>Join a Lights Bingo game</title>
+<link rel="stylesheet" href="style.css">
+<style>.btn{display:block;text-align:center;padding:14px 18px;border-radius:14px;font-weight:700;text-decoration:none;margin:12px 0}.primary{background:var(--amber);color:#1b1200}.ghost{border:1px solid var(--line);color:var(--ink)}.code{font-size:30px;letter-spacing:6px;text-align:center;margin:8px 0}</style>
+</head>
+<body><main>
+<nav><a href="index.html">Lights Bingo</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>You're invited to a game</h1>
+<p id="what">Open Lights Bingo to join, already set up for this game. Add your name and deal.</p>
+<p class="code" id="code"></p>
+<a class="btn primary" id="open" href="lightsbingo://join">Open in Lights Bingo</a>
+<a class="btn ghost" href="https://apps.apple.com/app/id6827309710">Get Lights Bingo on the App Store</a>
+<p>Don't have the app yet? Install it, then come back to this page and tap Open. Or type the game code in New game, with the same holiday and difficulty.</p>
+<div class="card"><p><strong>Passengers play. The driver drives.</strong></p></div>
+<footer>© 2026 Thomas Innovative Technologies.</footer>
+</main>
+<script>
+(function () {
+  var q = location.search.replace(/^\?/, '');
+  var params = {};
+  q.split('&').forEach(function (p) { var i = p.indexOf('='); if (i > 0) { try { params[p.slice(0, i)] = decodeURIComponent(p.slice(i + 1).replace(/\+/g, ' ')); } catch (e) {} } });
+  var safe = q.replace(/[^A-Za-z0-9=&%._~+-]/g, '');
+  var url = 'lightsbingo://join' + (safe ? '?' + safe : '');
+  document.getElementById('open').href = url;
+  if (params.c && /^[A-Z0-9]{4,8}$/i.test(params.c)) document.getElementById('code').textContent = params.c.toUpperCase();
+  if (params.h) document.getElementById('what').textContent = params.h.slice(0, 24) + ' invited you to play. Open Lights Bingo to join, already set up for this game. Add your name and deal.';
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent) && params.c) setTimeout(function () { location.href = url; }, 400);
+})();
+</script>
+</body>
+</html>
