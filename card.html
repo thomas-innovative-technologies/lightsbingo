@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+// Smart App Banner that also carries the card, so "Open" on the banner lands on it.
+(function () {
+  var m = /[?&]id=([a-z0-9-]{3,40})(?:&|$)/.exec(location.search);
+  var arg = m ? ',app-argument=lightsbingo://card?id=' + m[1] : '';
+  document.write('<meta name="apple-itunes-app" content="app-id=6827309710' + arg + '">');
+})();
+</script>
+<title>Lights Bingo card</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.btn{display:block;text-align:center;padding:16px 18px;border-radius:14px;font-weight:700;font-size:18px;text-decoration:none;margin:12px 0}
+.primary{background:var(--amber);color:#1b1200}.ghost{border:1px solid var(--line);color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--amber);color:var(--amber);border-radius:4px;padding:1px 6px;font-size:12px;font-weight:700;letter-spacing:.08em;margin-right:6px}
+.sponsor{display:flex;align-items:center;gap:8px;margin:6px 0 2px}.sponsor img{width:40px;height:40px;object-fit:contain;border-radius:6px}
+.hint{display:none;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0}
+</style>
+</head>
+<body><main>
+<nav><a href="index.html">Lights Bingo</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1 id="title">A Lights Bingo card</h1>
+<div class="sponsor" id="sponsor" hidden></div>
+<p id="what">Open Lights Bingo to play this card. It's free.</p>
+<a class="btn primary" id="open" href="lightsbingo://card">Open in Lights Bingo</a>
+<a class="btn ghost" href="https://apps.apple.com/app/id6827309710">Get Lights Bingo on the App Store</a>
+<p class="hint" id="inapp"><strong>Button didn't open the app?</strong> You're in the Facebook or Instagram browser. Tap <strong>•••</strong> at the top and choose <strong>Open in browser</strong> (or Open in Safari), then tap Open in Lights Bingo.</p>
+<p>New to Lights Bingo? Install it from the App Store, then come back to this page and tap Open in Lights Bingo.</p>
+<div class="card"><p><strong>Passengers play. The driver drives.</strong></p></div>
+<footer>© 2026 Thomas Innovative Technologies.</footer>
+</main>
+<script>
+(function () {
+  var m = /[?&]id=([a-z0-9-]{3,40})(?:&|$)/.exec(location.search);
+  var id = m ? m[1] : '';
+  var url = 'lightsbingo://card' + (id ? '?id=' + id : '');
+  document.getElementById('open').href = url;
+  var ua = navigator.userAgent || '';
+  var inApp = /FBAN|FBAV|FB_IAB|Instagram|Messenger/i.test(ua);
+  if (inApp) document.getElementById('inapp').style.display = 'block';
+  // Show the card's name from our own card file (same site; nothing is recorded).
+  if (id) {
+    fetch('cards.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (f) {
+      var c = f && Array.isArray(f.cards) ? f.cards.filter(function (x) { return x && x.id === id; })[0] : null;
+      if (!c || (f.pulled || []).indexOf(id) >= 0) { document.getElementById('what').textContent = 'This card may have ended. Open Lights Bingo to see the cards playing now.'; return; }
+      var t = String(c.title || '').slice(0, 40);
+      if (t) { document.getElementById('title').textContent = t; document.title = t + ' · Lights Bingo'; }
+      if (c.sponsored && c.sponsor) {
+        var s = document.getElementById('sponsor');
+        var logo = typeof c.logo === 'string' && /^[a-z0-9/_-]+\.(png|jpe?g|webp)$/i.test(c.logo) ? '<img alt="" src="' + c.logo + '">' : '';
+        s.innerHTML = logo + '<span class="tag">SPONSORED</span><span></span>';
+        s.lastChild.textContent = String(c.sponsor).slice(0, 40);
+        s.hidden = false;
+      }
+    }).catch(function () {});
+  }
+  // In Safari, try the app straight away; the buttons stay for every other case.
+  if (id && !inApp && /iPhone|iPad|iPod/.test(ua)) setTimeout(function () { location.href = url; }, 500);
+})();
+</script>
+</body>
+</html>

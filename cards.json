@@ -1,0 +1,433 @@
+{
+  "format": 1,
+  "cards": [
+    {
+      "id": "theme-park-holidays",
+      "title": "Theme Park Holidays",
+      "subtitle": "Spot the holidays at any theme park. Phones away on rides.",
+      "look": "christmas",
+      "start": "2026-11-21",
+      "end": "2027-01-05",
+      "sponsored": false,
+      "featured": true,
+      "items": [
+        {
+          "name": "Giant Christmas tree",
+          "icon": "🎄",
+          "rarity": "common",
+          "hint": "A decorated tree taller than a house"
+        },
+        {
+          "name": "Holiday wreath",
+          "icon": "🎀",
+          "rarity": "common",
+          "hint": "A wreath on a gate, shop or lamppost"
+        },
+        {
+          "name": "Garland on a lamppost",
+          "icon": "🌿",
+          "rarity": "common",
+          "hint": "Greenery or garland wrapped around a lamppost"
+        },
+        {
+          "name": "Snowflake decoration",
+          "icon": "❄️",
+          "rarity": "common",
+          "hint": "A snowflake hanging, glowing or painted"
+        },
+        {
+          "name": "Candy cane decoration",
+          "icon": "🍬",
+          "rarity": "common",
+          "hint": "A candy cane bigger than a real one"
+        },
+        {
+          "name": "Giant ornament",
+          "icon": "🔴",
+          "rarity": "common",
+          "hint": "An ornament bigger than your head"
+        },
+        {
+          "name": "Stack of giant presents",
+          "icon": "🎁",
+          "rarity": "common",
+          "hint": "Wrapped boxes piled up as a display"
+        },
+        {
+          "name": "Hot cocoa",
+          "icon": "☕",
+          "rarity": "common",
+          "hint": "Someone holding a cup of hot cocoa"
+        },
+        {
+          "name": "Holiday cookie",
+          "icon": "🍪",
+          "rarity": "common",
+          "hint": "A cookie shaped like a tree, star or snowman"
+        },
+        {
+          "name": "Someone in a Santa hat",
+          "icon": "🧑‍🎄",
+          "rarity": "common",
+          "hint": "A guest wearing a Santa hat"
+        },
+        {
+          "name": "Reindeer antlers",
+          "icon": "🦌",
+          "rarity": "common",
+          "hint": "A guest wearing antlers or a light-up holiday headband"
+        },
+        {
+          "name": "Holiday sweater",
+          "icon": "🧶",
+          "rarity": "common",
+          "hint": "Someone in a holiday sweater, even when it's warm out"
+        },
+        {
+          "name": "Lights on a ride",
+          "icon": "💡",
+          "rarity": "common",
+          "hint": "A ride wrapped in holiday lights"
+        },
+        {
+          "name": "Holiday music",
+          "icon": "🎶",
+          "rarity": "common",
+          "hint": "A holiday song playing as you walk by"
+        },
+        {
+          "name": "Poinsettia",
+          "icon": "🌺",
+          "rarity": "common",
+          "hint": "A red or white poinsettia plant"
+        },
+        {
+          "name": "Palm tree in lights",
+          "icon": "🌴",
+          "rarity": "common",
+          "hint": "A palm tree wrapped in lights"
+        },
+        {
+          "name": "Snowman decoration",
+          "icon": "⛄",
+          "rarity": "common",
+          "hint": "A snowman made of anything but snow"
+        },
+        {
+          "name": "Holiday shop window",
+          "icon": "🛍️",
+          "rarity": "common",
+          "hint": "A shop window decorated for the holidays"
+        },
+        {
+          "name": "Snow falling",
+          "icon": "🌨️",
+          "rarity": "uncommon",
+          "hint": "Snow (real or not) falling from above"
+        },
+        {
+          "name": "Gingerbread display",
+          "icon": "🏡",
+          "rarity": "uncommon",
+          "hint": "A gingerbread house or gingerbread people on display"
+        },
+        {
+          "name": "Holiday parade float",
+          "icon": "🎊",
+          "rarity": "uncommon",
+          "hint": "A float decorated for the holidays"
+        },
+        {
+          "name": "Carolers",
+          "icon": "🎤",
+          "rarity": "uncommon",
+          "hint": "A group singing holiday songs"
+        },
+        {
+          "name": "Light tunnel",
+          "icon": "🌀",
+          "rarity": "uncommon",
+          "hint": "A tunnel or archway made of lights"
+        },
+        {
+          "name": "Nutcracker",
+          "icon": "💂",
+          "rarity": "uncommon",
+          "hint": "A nutcracker or toy soldier figure"
+        },
+        {
+          "name": "Holiday-themed ride",
+          "icon": "🎢",
+          "rarity": "uncommon",
+          "hint": "A ride with a holiday makeover"
+        },
+        {
+          "name": "Holiday train",
+          "icon": "🚂",
+          "rarity": "uncommon",
+          "hint": "A train decorated for the holidays"
+        },
+        {
+          "name": "Ice skaters",
+          "icon": "⛸️",
+          "rarity": "uncommon",
+          "hint": "Skaters on real or pretend ice"
+        },
+        {
+          "name": "Peppermint treat",
+          "icon": "🍭",
+          "rarity": "uncommon",
+          "hint": "A peppermint drink, candy or dessert"
+        },
+        {
+          "name": "Letters to Santa",
+          "icon": "📮",
+          "rarity": "uncommon",
+          "hint": "A mailbox or station for letters to Santa"
+        },
+        {
+          "name": "Menorah",
+          "icon": "🕎",
+          "rarity": "uncommon",
+          "hint": "A menorah on display"
+        },
+        {
+          "name": "Holiday performer",
+          "icon": "🎭",
+          "rarity": "uncommon",
+          "hint": "A performer dressed for the holidays"
+        },
+        {
+          "name": "Lights dancing to music",
+          "icon": "🪩",
+          "rarity": "uncommon",
+          "hint": "A building or tree with lights synced to music"
+        },
+        {
+          "name": "Matching family shirts",
+          "icon": "👕",
+          "rarity": "uncommon",
+          "hint": "A family in matching holiday shirts"
+        },
+        {
+          "name": "Sleigh",
+          "icon": "🛷",
+          "rarity": "uncommon",
+          "hint": "A sleigh on display or in a show"
+        },
+        {
+          "name": "Fireworks",
+          "icon": "🎆",
+          "rarity": "rare",
+          "hint": "Holiday fireworks in the sky"
+        },
+        {
+          "name": "Drone show",
+          "icon": "🛸",
+          "rarity": "rare",
+          "hint": "Drones making a holiday picture in the sky"
+        },
+        {
+          "name": "Santa in person",
+          "icon": "🎅",
+          "rarity": "rare",
+          "hint": "Santa himself (not just a hat!)"
+        },
+        {
+          "name": "Tree lighting",
+          "icon": "✨",
+          "rarity": "rare",
+          "hint": "The moment a big tree lights up"
+        },
+        {
+          "name": "Ice sculpture",
+          "icon": "🧊",
+          "rarity": "rare",
+          "hint": "A sculpture carved from ice"
+        },
+        {
+          "name": "Animal by the decorations",
+          "icon": "🦒",
+          "rarity": "rare",
+          "hint": "A real animal near holiday decorations"
+        },
+        {
+          "name": "Mistletoe",
+          "icon": "😘",
+          "rarity": "rare",
+          "hint": "Mistletoe hanging over a doorway"
+        },
+        {
+          "name": "Fireworks over water",
+          "icon": "🎇",
+          "rarity": "rare",
+          "hint": "Fireworks reflected in a lake or lagoon"
+        },
+        {
+          "name": "A proposal",
+          "icon": "💍",
+          "rarity": "rare",
+          "hint": "Someone popping the question"
+        },
+        {
+          "name": "Giant lit-up star",
+          "icon": "⭐",
+          "rarity": "rare",
+          "hint": "A star taller than a person"
+        },
+        {
+          "name": "Kinara",
+          "icon": "🕯️",
+          "rarity": "rare",
+          "hint": "A kinara with seven candles"
+        }
+      ]
+    },
+    {
+      "id": "test-sponsor",
+      "title": "Test Sponsor Lights",
+      "subtitle": "A test card. Not shown in the list; open it with its link.",
+      "look": "christmas",
+      "start": "2026-11-18",
+      "end": "2026-12-31",
+      "sponsored": true,
+      "sponsor": "Test Sponsor",
+      "featured": false,
+      "hidden": true,
+      "logo": "cards/test-sponsor-logo.png",
+      "items": [
+        {
+          "name": "Candy cane lights along a path",
+          "icon": "🍬",
+          "rarity": "common"
+        },
+        {
+          "name": "Lit-up reindeer",
+          "icon": "🦌",
+          "rarity": "common"
+        },
+        {
+          "name": "Wreath on the door",
+          "icon": "💐",
+          "rarity": "common"
+        },
+        {
+          "name": "Icicle lights on the roof",
+          "icon": "❄️",
+          "rarity": "common"
+        },
+        {
+          "name": "Star on top of a tree",
+          "icon": "⭐",
+          "rarity": "common"
+        },
+        {
+          "name": "Inflatable snowman",
+          "icon": "☃️",
+          "rarity": "common"
+        },
+        {
+          "name": "Red bow on a mailbox",
+          "icon": "🎀",
+          "rarity": "common"
+        },
+        {
+          "name": "Tree in the front window",
+          "icon": "🎄",
+          "rarity": "common"
+        },
+        {
+          "name": "Blue lights only",
+          "icon": "🔵",
+          "rarity": "common"
+        },
+        {
+          "name": "Garland on a railing",
+          "icon": "🌿",
+          "rarity": "common"
+        },
+        {
+          "name": "Lit-up candy cane",
+          "icon": "🍭",
+          "rarity": "common"
+        },
+        {
+          "name": "Presents on the porch",
+          "icon": "🎁",
+          "rarity": "common"
+        },
+        {
+          "name": "Light-up snowflake",
+          "icon": "❄",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Santa on the roof",
+          "icon": "🎅",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Gingerbread house display",
+          "icon": "🏠",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Nutcracker soldier",
+          "icon": "💂",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Train set in the yard",
+          "icon": "🚂",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Penguin family",
+          "icon": "🐧",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Angel with wings",
+          "icon": "👼",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Lights in the shape of a tree",
+          "icon": "🌲",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Polar bear",
+          "icon": "🐻‍❄️",
+          "rarity": "uncommon"
+        },
+        {
+          "name": "Lights synced to music",
+          "icon": "🎶",
+          "rarity": "rare"
+        },
+        {
+          "name": "Tunnel of lights",
+          "icon": "🌈",
+          "rarity": "rare"
+        },
+        {
+          "name": "Giant inflatable (taller than the house)",
+          "icon": "🎈",
+          "rarity": "rare"
+        },
+        {
+          "name": "Snow machine",
+          "icon": "🌨️",
+          "rarity": "rare"
+        },
+        {
+          "name": "Live nativity",
+          "icon": "🐑",
+          "rarity": "rare"
+        }
+      ]
+    }
+  ],
+  "pulled": []
+}
