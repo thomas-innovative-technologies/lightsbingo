@@ -294,7 +294,7 @@
       "sponsor": "Test Sponsor",
       "featured": false,
       "hidden": true,
-      "logo": "cards/test-sponsor-logo.png",
+      "logo": "test-sponsor-logo.png",
       "items": [
         {
           "name": "Candy cane lights along a path",
